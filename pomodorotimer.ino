@@ -69,10 +69,7 @@ void setup() {
   displayNumber("8888"); 
 
   //..and play some tones
-  playNote('c', 100);
-  playNote('e', 100);
-  playNote('g', 100);
-  playNote('C', 100);
+  playTone(200, 100);
 }
 
 void loop() {
@@ -126,10 +123,7 @@ void count() {
         counting = false;
         active = false;
 
-        playNote('C', 100);
-        playNote('g', 100);
-        playNote('e', 100);
-        playNote('c', 100);
+        playTone(200, 800);
 
         delay(1000);
 
@@ -218,18 +212,5 @@ void displayNumber(String line)
     delayMicroseconds(tone);
     digitalWrite(speakerPin, LOW);
     delayMicroseconds(tone);
-  }
-}
-
-/* Play a musical note, based on its name and duration */
-void playNote(char note, int duration) {
-  char names[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C' };
-  int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 956 };
-
-  // play the tone corresponding to the note name
-  for (int i = 0; i < 8; i++) {
-    if (names[i] == note) {
-      playTone(tones[i], duration);
-    }
   }
 }

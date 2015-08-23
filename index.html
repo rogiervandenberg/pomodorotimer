@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Pomodorotimer : Arduino Pomodoro Timer, counts down to zero to facilitate a &quot;Pomodoro Session&quot;. Including LCD Display and 1-button interface.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pomodorotimer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rogiervandenberg/pomodorotimer">View on GitHub</a>
+
+          <h1 id="project_title">Pomodorotimer</h1>
+          <h2 id="project_tagline">Arduino Pomodoro Timer, counts down to zero to facilitate a &quot;Pomodoro Session&quot;. Including LCD Display and 1-button interface.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rogiervandenberg/pomodorotimer/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rogiervandenberg/pomodorotimer/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="arduino-pomodoro-timer" class="anchor" href="#arduino-pomodoro-timer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arduino Pomodoro Timer</h1>
+
+<p>Arduino Pomodoro Timer, counts down to zero to facilitate a "Pomodoro Session". Including LCD Display and 1-button interface.</p>
+
+<p>Do you want to work on something, fully focused? Maybe <a href="http://www.pomodorotechnique.com/">The Pomodoro Technique</a> can help you. It dictates that you work in blocks of 25-minutes.</p>
+
+<h2>
+<a id="timer" class="anchor" href="#timer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Timer</h2>
+
+<p>Inspired by this concept, I made my own Pomodoro Timer, with an Arduino of course ;) I made a prototype, with a breadboarded Arduino and only a Lego casing around the display, but it could also be built into a proper case of course.</p>
+
+<p><img src="http://3.bp.blogspot.com/-D8MTyGYdg0s/UgT_7tsC1YI/AAAAAAAAEvI/d-NAd8UmFdk/s400/Screen+Shot+2013-08-09+at+16.23.26.png" alt="Prototype of the Pomodoro Timer"></p>
+
+<p>When connecting to power, it will automatically start counting down 25 minutes (default). When your time is up, you will hear a beep and the timer shuts its display down. With one press on the button and you can start a new session. When pressing the button multiple times, you can switch the count-down period.</p>
+
+<h2>
+<a id="one-button" class="anchor" href="#one-button" aria-hidden="true"><span class="octicon octicon-link"></span></a>One button</h2>
+
+<p>The timer had to be super-easy to operate, so it only has one button. This button will make the timer:</p>
+
+<ul>
+<li>Reset the current session when already counting down;</li>
+<li>Switch to a different count-down period (25 (default), 45, 5 or 15 minutes);</li>
+<li>Start a new session when stopped.</li>
+</ul>
+
+<h2>
+<a id="display" class="anchor" href="#display" aria-hidden="true"><span class="octicon octicon-link"></span></a>Display</h2>
+
+<p>The display I used is a <a href="http://www.dfrobot.com/wiki/index.php/3-Wire_LED_Module_(SKU:DFR0090)">3-Wire LED Module from DFRobot</a>.</p>
+
+<h2>
+<a id="demonstration" class="anchor" href="#demonstration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demonstration</h2>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pomodorotimer maintained by <a href="https://github.com/rogiervandenberg">rogiervandenberg</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
